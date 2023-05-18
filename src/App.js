@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  return <div>REACT_APP_MSG: {process.env.REACT_APP_MSG ?? "No environment variables exposed to the browser"}</div>;
+  return <div>Test: {window.REACT_APP_MSG = __REACT_APP_MSG__};</div>;
 }
 
 export default App;
